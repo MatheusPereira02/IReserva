@@ -1,0 +1,81 @@
+.reserva_bg {
+  min-height: 90vh;
+  background: linear-gradient(rgba(49, 49, 49, 0.85), rgba(49, 49, 49, 0.85)),
+              url('../img/mesa-restaurante.jpg');
+  background-size: cover;
+  background-position: center;
+min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2em;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.reserva_form {
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 600px;       /* igual ao contato_container */
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(66, 61, 61, 0.7);
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.reserva_form h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;   /* igual contato h1 */
+  color: #ffcc00;
+}
+
+.reserva_form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #ddd;
+}
+
+.reserva_form input,
+.reserva_form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  background-color: #222;
+  color: #fff;
+  transition: outline 0.3s ease;
+}
+
+.reserva_form input:focus,
+.reserva_form textarea:focus {
+  outline: 3px solid #ffcc00;
+  background-color: #222;
+}
+
+.reserva_form button {
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.reserva_form button:hover {
+  background-color: #e6b800;
+}
+
+@media (max-width: 600px) {
+  .reserva_form {
+    padding: 1rem;
+    max-width: 90%;
+  }
+}
